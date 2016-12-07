@@ -10,7 +10,7 @@ WARC-IP-Address: 65.52.108.2
 WARC-Target-URI: http://www.A.com/
 WARC-Block-Digest: sha1:5NMRLNR2RMTENZIN3AVCEYZMWL2OJ7SB
 
-<a href="http://www.B.com/"> a link super extra link </a>
+<a href="http://www.B.com/"> a link </a>
 
 WARC/1.0
 WARC-Type: response
@@ -24,6 +24,6 @@ WARC-IP-Address: 65.52.108.2
 WARC-Target-URI: http://www.B.com/
 WARC-Block-Digest: sha1:5NMRLNR2RMTENZIN3AVCEYZMWL2OJ7SB
 
-<a href="http://www.A.com/"> a link super extra link </a>
-<a href="http://www.B.com/"> a link super extra link </a>
-<a href="http://www.A.com/"> a link super extra link </a>
+<a href="http://www.A.com/"> a link </a>
+<a href="http://www.B.com/"> a link </a>
+<a href="http://www.A.com/"> a link </a>

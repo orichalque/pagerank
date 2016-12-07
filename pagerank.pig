@@ -1,24 +1,22 @@
-previous_pagerank = 
+initial = 
     LOAD 'data/etl-file.txt'
     USING PigStorage('\t') 
     AS ( url: chararray, pagerank: float, links:{ link:tuple(url: chararray) } );
 
-outbound_pagerank = 
-    FOREACH previous_pagerank 
+flattened_pgrnk = 
+    FOREACH initial 
     GENERATE 
         pagerank / COUNT ( links ) AS pagerank, 
         FLATTEN ( links ) AS to_url;
 
-new_pagerank = 
-	FOREACH ( COGROUP outbound_pagerank BY to_url, previous_pagerank BY url INNER )
+grouped_pgrnk = 
+	FOREACH ( COGROUP flattened_pgrnk BY to_url, initial BY url INNER )
 	GENERATE 
 		group AS url, 
-        	0.2+0.5*SUM(outbound_pagerank.pagerank) AS pagerank, 
-        	FLATTEN ( previous_pagerank.links ) AS links;
-
-ordered = ORDER new_pagerank BY pagerank DESC;
+        	0.2+0.5*SUM(flattened_pgrnk.pagerank) AS pagerank, 
+        	FLATTEN ( initial.links ) AS links;
   
-STORE ordered 
+STORE grouped_pgrnk 
     INTO './result-pig' 
     USING PigStorage('\t');
 
