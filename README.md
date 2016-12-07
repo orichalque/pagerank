@@ -1,22 +1,22 @@
-### Project for LSDM (Large Scale Data Management)
+# Project for LSDM (Large Scale Data Management)
 
 ## This folder countains 3 pagerank implementations and a parser . Run the commands in a shell
 
-# Pig
+### Pig
 
 - Run: ``` pig -x local pagerank.pig ```
 
-# Python
+### Python
 
 - Run: ``` pig -x local -embedded jython pagerank.py ```
 
-# Scala
+### Scala
 
 - Run: 
 ``` spark-shell ```
 ``` :load pagerank.scala ```
                         
-# Parser 
+### Parser 
 
 - Install the html parser Beautiful Soup locally with: ``` python3 install.py --local" inside the beautifulSoup folder
 
