@@ -1,0 +1,5 @@
+http://A.com/	1	{(http://B.com/),(http://C.com/),(http://D.com/),(http://E.com/)}
+http://B.com/	1	{(http://C.com/)}
+http://C.com/	1	{(http://D.com/),(http://A.com/),(http://E.com/)}
+http://D.com/	1	{(http://C.com/)}
+http://E.com/	1	{(http://C.com/)}

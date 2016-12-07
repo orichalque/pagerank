@@ -1,0 +1,29 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2016-09-24T20:55:40Z
+WARC-Record-ID: <urn:uuid:112c7d02-edff-46ea-85b1-6746e4d94225>
+Content-Length: 174
+Content-Type: application/http; msgtype=response
+WARC-Warcinfo-ID: <urn:uuid:0e0a4017-2c03-4b18-9bb9-6c2398ee9c72>
+WARC-Concurrent-To: <urn:uuid:f98aedea-42ab-4cc6-82e9-820646a8a5f2>
+WARC-IP-Address: 65.52.108.2
+WARC-Target-URI: http://www.A.com/
+WARC-Block-Digest: sha1:5NMRLNR2RMTENZIN3AVCEYZMWL2OJ7SB
+
+<a href="http://www.B.com/"> a link super extra link </a>
+
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2016-09-24T20:55:40Z
+WARC-Record-ID: <urn:uuid:112c7d02-edff-46ea-85b1-6746e4d94225>
+Content-Length: 174
+Content-Type: application/http; msgtype=response
+WARC-Warcinfo-ID: <urn:uuid:0e0a4017-2c03-4b18-9bb9-6c2398ee9c72>
+WARC-Concurrent-To: <urn:uuid:f98aedea-42ab-4cc6-82e9-820646a8a5f2>
+WARC-IP-Address: 65.52.108.2
+WARC-Target-URI: http://www.B.com/
+WARC-Block-Digest: sha1:5NMRLNR2RMTENZIN3AVCEYZMWL2OJ7SB
+
+<a href="http://www.A.com/"> a link super extra link </a>
+<a href="http://www.B.com/"> a link super extra link </a>
+<a href="http://www.A.com/"> a link super extra link </a>
