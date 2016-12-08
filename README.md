@@ -18,6 +18,6 @@
                         
 ### Parser 
 
-- Install the html parser Beautiful Soup locally with: ``` python3 install.py --local" inside the beautifulSoup folder
+- Install the html parser Beautiful Soup locally with: ``` python3 install.py --local``` inside the beautifulSoup folder
 
 - Run ```python3 commoncrawl-to-pigformat.py ``` to generate the etl-file.txt 
